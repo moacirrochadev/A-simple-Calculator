@@ -1,44 +1,109 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="output.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
-		<title>Calculadora Básica HTML</title>
-	</head>
-	<body>
-		<div id="container">
-			<div id="calculator">
-				<div id="result">
-					<div id="history">
-						<p id="history-value"></p>
-					</div>
-					<div id="output">
-						<p id="output-value"></p>
-					</div>
-				</div>
-				<div id="keyboard">
-					<button class="operator" id="clear">C</button>
-					<button class="operator" id="backspace">CE</button>
-					<button class="operator" id="%">%</button>
-					<button class="operator" id="/">&#247;</button>
-					<button class="number" id="7">7</button>
-					<button class="number" id="8">8</button>
-					<button class="number" id="9">9</button>
-					<button class="operator" id="*">&times;</button>
-					<button class="number" id="4">4</button>
-					<button class="number" id="5">5</button>
-					<button class="number" id="6">6</button>
-					<button class="operator" id="-">-</button>
-					<button class="number" id="1">1</button>
-					<button class="number" id="2">2</button>
-					<button class="number" id="3">3</button>
-					<button class="operator" id="+">+</button>
-					<button class="empty" id="empty"></button>
-					<button class="number" id="0">0</button>
-					<button class="empty" id="empty"></button>
-					<button class="operator" id="=">=</button>
-				</div>
-			</div>
-		</div>
-		<script src="script.js"></script>
-	</body>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:600,700"
+      rel="stylesheet"
+    />
+    <title>Calculadora Básica HTML</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-slate-800 text-zinc-50 text-center flex flex-col items-center justify-center"
+  >
+    <header class="p-4">
+      <h1 class="text-2xl font-black">My <span class="text-blue-700">Calc</span></h1>
+	  <p class="text-lg font-black">Bem-vindo!</p>
+    </header>
+    <div id="container" class="border-4 rounded-lg">
+      <div id="calculator" class="w-64">
+        <div
+          id="result"
+          class="h-24 bg-slate-600 font-black text-3xl text-right pr-4 rounded-lg flex flex-col items-end justify-center"
+        >
+          <div id="history">
+            <p id="history-value"></p>
+          </div>
+          <div id="output">
+            <p id="output-value">0</p>
+          </div>
+        </div>
+        <div
+          id="keyboard"
+          class="grid grid-cols-4 justify-items-center gap-4 my-4 text-zinc-800"
+        >
+          <button class="operator size-7 bg-slate-300 rounded-full" id="clear">
+            C
+          </button>
+          <button
+            class="operator size-7 bg-slate-300 rounded-full"
+            id="backspace"
+          >
+            CE
+          </button>
+          <button class="operator size-7 bg-slate-300 rounded-full" id="%">
+            %
+          </button>
+          <button class="operator size-7 bg-slate-300 rounded-full" id="/">
+            &#247;
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="7">
+            7
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="8">
+            8
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="9">
+            9
+          </button>
+          <button class="operator size-7 bg-slate-300 rounded-full" id="*">
+            &times;
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="4">
+            4
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="5">
+            5
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="6">
+            6
+          </button>
+          <button class="operator size-7 bg-slate-300 rounded-full" id="-">
+            -
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="1">
+            1
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="2">
+            2
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="3">
+            3
+          </button>
+          <button class="operator size-7 bg-slate-300 rounded-full" id="+">
+            +
+          </button>
+          <button class="empty size-7 bg-slate-300 rounded-full" id="empty">
+            ,
+          </button>
+          <button class="number size-7 bg-slate-300 rounded-full" id="0">
+            0
+          </button>
+          <button class="empty size-7 bg-slate-300 rounded-full" id="empty">
+            .
+          </button>
+          <button class="operator size-7 bg-slate-300 rounded-full" id="=">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+	<footer class="py-4">
+		<p class="font-black">Desenvolvido por <a href="https://instagram.com/moacirroneto" class="text-blue-700">Moacir Rocha</a></p>
+	</footer>
+    <script src="script.js"></script>
+  </body>
 </html>
