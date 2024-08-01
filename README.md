@@ -8,9 +8,9 @@
 - Abra o arquivo index.html.
 
 ## Technologies used: 
-- HTML
-- Tailwind CSS []
-- Javascript [Logic/Working of calculator]
+- HTML [https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white]
+- Tailwind CSS [https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white]
+- Javascript [Logic/Working of calculator](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]
 
 # A simple Calculator
  A simple calculator using HTML, CSS &amp; Javascript
