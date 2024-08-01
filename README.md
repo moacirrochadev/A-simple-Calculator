@@ -1,6 +1,6 @@
 # Uma calculadora simples
  Uma calculadora simples usando HTML, TailwindCSS e Javascript
- ![title-pic]()
+ ![title-pic](./my-calc-img.png)
  Esta é uma calculadora simples com as funcionalidades usando JavaScript. A lógica é bem simples com o mínimo possível de código.
  
 ## Passos para executar a calculadora:
