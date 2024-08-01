@@ -12,98 +12,105 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="bg-slate-800 text-zinc-50 text-center flex flex-col items-center justify-center"
+    class="bg-slate-800 text-zinc-50 flex flex-col items-center justify-center"
   >
-    <header class="p-4">
-      <h1 class="text-2xl font-black">My <span class="text-blue-700">Calc</span></h1>
-	  <p class="text-lg font-black">Bem-vindo!</p>
+    <header class="p-4 text-center">
+      <h1 class="text-6xl font-black p-2">
+        My <span class="text-blue-700">Calc</span>
+      </h1>
+      <p class="text-4xl lg:text-lg font-black p-2">Bem-vindo!</p>
     </header>
-    <div id="container" class="border-4 rounded-lg">
-      <div id="calculator" class="w-64">
+    <div id="container">
+      <div id="calculator" class="max-w-full max-h-full">
         <div
           id="result"
-          class="h-24 bg-slate-600 font-black text-3xl text-right pr-4 rounded-lg flex flex-col items-end justify-center"
+          class="w-[420px] lg:w-60 h-[320px] lg:h-36 bg-slate-600 font-black text-6xl lg:text-4xl rounded-3xl"
         >
-          <div id="history">
-            <p id="history-value"></p>
+          <div id="history" class="w-full h-1/2 text-end p-4">
+            <p id="history-value" class="align-text-bottom">0</p>
           </div>
-          <div id="output">
-            <p id="output-value">0</p>
+          <div id="output" class="w-full h-1/2 text-end p-4">
+            <p id="output-value" class="align-text-bottom">0</p>
           </div>
         </div>
         <div
           id="keyboard"
-          class="grid grid-cols-4 justify-items-center gap-4 my-4 text-zinc-800"
+          class="w-[420px] lg:w-60 h-[640px] lg:h-72 grid grid-cols-4 justify-items-center lg:gap-4 p-4 lg:p-2 text-zinc-800 text-5xl lg:text-xl font-semibold bg-slate-900 rounded-2xl"
         >
-          <button class="operator size-7 bg-slate-300 rounded-full" id="clear">
+          <button class="operator size-20 lg:size-9 bg-slate-300 rounded-full" id="clear">
             C
           </button>
           <button
-            class="operator size-7 bg-slate-300 rounded-full"
+            class="operator size-20 lg:size-9 bg-slate-300 rounded-full"
             id="backspace"
           >
             CE
           </button>
-          <button class="operator size-7 bg-slate-300 rounded-full" id="%">
+          <button class="operator size-20 lg:size-9 bg-slate-300 rounded-full" id="%">
             %
           </button>
-          <button class="operator size-7 bg-slate-300 rounded-full" id="/">
+          <button class="operator size-20 lg:size-9 bg-orange-300 rounded-full" id="/">
             &#247;
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="7">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="7">
             7
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="8">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="8">
             8
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="9">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="9">
             9
           </button>
-          <button class="operator size-7 bg-slate-300 rounded-full" id="*">
+          <button class="operator size-20 lg:size-9 bg-blue-300 rounded-full" id="*">
             &times;
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="4">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="4">
             4
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="5">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="5">
             5
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="6">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="6">
             6
           </button>
-          <button class="operator size-7 bg-slate-300 rounded-full" id="-">
+          <button class="operator size-20 lg:size-9 bg-green-300 rounded-full" id="-">
             -
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="1">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="1">
             1
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="2">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="2">
             2
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="3">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="3">
             3
           </button>
-          <button class="operator size-7 bg-slate-300 rounded-full" id="+">
+          <button class="operator size-20 lg:size-9 bg-yellow-300 rounded-full" id="+">
             +
           </button>
-          <button class="empty size-7 bg-slate-300 rounded-full" id="empty">
+          <button class="empty size-20 lg:size-9 bg-slate-300 rounded-full" id="empty">
             ,
           </button>
-          <button class="number size-7 bg-slate-300 rounded-full" id="0">
+          <button class="number size-20 lg:size-9 bg-slate-300 rounded-full" id="0">
             0
           </button>
-          <button class="empty size-7 bg-slate-300 rounded-full" id="empty">
+          <button class="empty size-20 lg:size-9 bg-slate-300 rounded-full" id="empty">
             .
           </button>
-          <button class="operator size-7 bg-slate-300 rounded-full" id="=">
+          <button class="operator size-20 lg:size-9 bg-red-300 rounded-full" id="=">
             =
           </button>
         </div>
       </div>
     </div>
-	<footer class="py-4">
-		<p class="font-black">Desenvolvido por <a href="https://instagram.com/moacirroneto" class="text-blue-700">Moacir Rocha</a></p>
-	</footer>
+    <footer class="py-4">
+      <p class="font-black text-2xl">
+        Desenvolvido por
+        <a href="https://instagram.com/moacirroneto" class="text-blue-700"
+          >Moacir Rocha</a
+        >
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
