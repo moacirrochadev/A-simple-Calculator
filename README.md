@@ -12,6 +12,8 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+[Veja como ficou](https://moacirrochadev.github.io/A-simple-Calculator/)
+
 # A simple Calculator
  A simple calculator using HTML, CSS &amp; Javascript
  ![title-pic](https://user-images.githubusercontent.com/39196039/40139639-27db8c64-596e-11e8-9537-04a5b5d07170.jpg)
